@@ -15,7 +15,12 @@
 
 ### 方法一：使用Docker Compose（推荐）
 
-1. **启动容器**
+1. **拉取最新镜像**
+   ```bash
+   docker pull tomatoknight/telegram-restricted-media-downloader:latest
+   ```
+
+2. **启动容器**
    ```bash
    docker-compose up -d
    ```
