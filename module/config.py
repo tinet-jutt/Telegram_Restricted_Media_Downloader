@@ -132,8 +132,9 @@ class BaseConfig:
 
 class UserConfig(BaseConfig):
     DIRECTORY_NAME: str = os.path.dirname(os.path.abspath(sys.argv[0]))  # 获取软件工作绝对目录。
+    CONFIG_SUBDIR: str = 'config'  # 配置文件子目录名。
     FILE_NAME: str = 'config.yaml'  # 配置文件名。
-    PATH: str = os.path.join(DIRECTORY_NAME, FILE_NAME)
+    PATH: str = os.path.join(DIRECTORY_NAME, CONFIG_SUBDIR, FILE_NAME)
     TEMPLATE: dict = {
         'api_id': None,
         'api_hash': None,
@@ -147,7 +148,7 @@ class UserConfig(BaseConfig):
             'password': None
         },
         'links': None,
-        'save_directory': None,  # v1.3.0 将配置文件中save_path的参数名修改为save_directory。
+        'save_directory': 'download',  # v1.3.0 将配置文件中save_path的参数名修改为save_directory。v1.3.8 默认下载目录为download
         'max_tasks': {
             'download': None,
             'upload': None
@@ -161,7 +162,7 @@ class UserConfig(BaseConfig):
     }
     TEMP_DIRECTORY: str = os.path.join(os.getcwd(), 'temp')
     BACKUP_DIRECTORY: str = 'ConfigBackup'
-    ABSOLUTE_BACKUP_DIRECTORY: str = os.path.join(DIRECTORY_NAME, BACKUP_DIRECTORY)
+    ABSOLUTE_BACKUP_DIRECTORY: str = os.path.join(DIRECTORY_NAME, CONFIG_SUBDIR, BACKUP_DIRECTORY)
     WORK_DIRECTORY: str = os.path.join(os.getcwd(), 'sessions')
 
     def __init__(self):

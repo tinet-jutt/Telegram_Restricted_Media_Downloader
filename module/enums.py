@@ -394,7 +394,7 @@ class Validator:
                 log.warning(f'意外的参数,填写的"{api_id}"可能是「api_hash」,请填入正确的「api_id」!')
                 return False
         except (AttributeError, TypeError):
-            log.error('手动编辑config.yaml时,api_id需要有引号!')
+            log.error('手动编辑config/config.yaml时,api_id需要有引号!')
             return False
 
     @staticmethod
@@ -548,8 +548,8 @@ class ProcessConfig:
             console.print('请配置代理!', style=ProcessConfig.stdio_style('config_proxy'))
             console.print(
                 '[#79FCD4]如果对代理配置有疑问[/#79FCD4][#FF79D4]请访问:[/#FF79D4]\n'
-                '[link=https://github.com/Gentlesprite/Telegram_Restricted_Media_Downloader/wiki#配置代理时在代理在本机的情况下]'
-                'https://github.com/Gentlesprite/Telegram_Restricted_Media_Downloader/wiki#配置代理时在代理在本机的情况下[/link]'
+                '[link=https://github.com/tinet-jutt/Telegram_Restricted_Media_Downloader/wiki#配置代理时在代理在本机的情况下]'
+                'https://github.com/tinet-jutt/Telegram_Restricted_Media_Downloader/wiki#配置代理时在代理在本机的情况下[/link]'
                 '\n[#FCFF79]若[/#FCFF79][#FF4689]无法[/#FF4689][#FF7979]访问[/#FF7979][#79FCD4],[/#79FCD4]'
                 '[#FCFF79]可[/#FCFF79][#d4fc79]查阅[/#d4fc79]'
                 '[#FC79A5]软件压缩包所提供的[/#FC79A5][#79E2FC]"使用手册"[/#79E2FC]'

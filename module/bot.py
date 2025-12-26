@@ -335,7 +335,7 @@ class Bot:
                 [
                     InlineKeyboardButton(
                         BotButton.GITHUB,
-                        url='https://github.com/Gentlesprite/Telegram_Restricted_Media_Downloader/releases',
+                        url='https://github.com/tinet-jutt/Telegram_Restricted_Media_Downloader/releases',
                     ),
                     InlineKeyboardButton(
                         BotButton.SUBSCRIBE_CHANNEL,
@@ -361,7 +361,7 @@ class Bot:
 
         text = (
             f'`\n💎 {SOFTWARE_FULL_NAME} v{__version__} 💎\n'
-            f'©️ {__copyright__.replace(" <https://github.com/Gentlesprite>", ".")}\n'
+            f'©️ {__copyright__.replace(" <https://github.com/tinet-jutt>", ".")}\n'
             f'📖 Licensed under the terms of the {__license__}.`\n'
             f'🎮️ 可用命令:\n'
             f'🛎️ {BotCommandText.with_description(BotCommandText.HELP)}\n'
@@ -413,7 +413,7 @@ class Bot:
                 [
                     InlineKeyboardButton(
                         BotButton.LINK_TABLE,
-                        url='https://github.com/Gentlesprite/Telegram_Restricted_Media_Downloader/releases',
+                        url='https://github.com/tinet-jutt/Telegram_Restricted_Media_Downloader/releases',
                         callback_data=BotCallbackText.LINK_TABLE
                     ),
                     InlineKeyboardButton(

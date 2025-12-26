@@ -57,7 +57,7 @@ AUTHOR = 'Gentlesprite'
 __version__ = '1.7.8'
 __license__ = 'MIT License'
 __update_date__ = '2025/12/18 21:31:33'
-__copyright__ = f'Copyright (C) 2024-{__update_date__[:4]} {AUTHOR} <https://github.com/Gentlesprite>'
+__copyright__ = f'Copyright (C) 2024-{__update_date__[:4]} {AUTHOR} <https://github.com/tinet-jutt>'
 SOFTWARE_FULL_NAME = 'Telegram Restricted Media Downloader'
 SOFTWARE_SHORT_NAME = 'TRMD'
 APPDATA_PATH = os.path.join(
@@ -129,7 +129,7 @@ CustomDumper.add_representer(type(None), CustomDumper.represent_none)
 README = r'''
 ```yaml
 # 这里只是介绍每个参数的含义,软件会详细地引导配置参数。
-# 如果是按照软件的提示填,选看。如果是手动打开config.yaml修改配置,请仔细阅读下面内容。
+# 如果是按照软件的提示填,选看。如果是手动打开config/config.yaml修改配置,请仔细阅读下面内容。
 # 手动填写时请注意冒号是英文冒号,冒号加一个空格。
 api_hash: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx # 申请的api_hash。
 api_id: 'xxxxxxxx' # 申请的api_id。
